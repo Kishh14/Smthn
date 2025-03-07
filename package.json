@@ -1,0 +1,12 @@
+{
+  "name": "lead-number-api",
+  "version": "1.0.0",
+  "description": "Simple API to return a lead number",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
