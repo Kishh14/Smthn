@@ -1,5 +1,9 @@
 const express = require("express");
+const cors = require('cors');
+
 const app = express();
+app.use(cors());
+
 
 // Hardcoded lead numbers for testing (you can replace with database values)
 // const leads = ["9876543210", "9998887776", "8765432109"];
@@ -11,7 +15,7 @@ app.get("/get-lead-number", (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-});
+});  
