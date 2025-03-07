@@ -11,7 +11,7 @@ app.use(cors());
 // API route to return a random lead number
 app.get("/get-lead-number", (req, res) => {
     const leadNumber = 8401481083;
-    res.send(leadNumber); // Return the number as plain text
+    res.send(leadNumber.toString()); // Return the number as plain text
 });
 
 // Start the server
